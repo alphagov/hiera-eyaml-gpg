@@ -160,8 +160,8 @@ class Hiera
               txt.seek 0
               txt.read
             else
-              warn("No usable keys found in #{gnupghome}. Check :gpgpghome value in hiera.yaml is correct")
-              raise ArgumentError, "No usable keys found in #{gnupghome}. Check :gpgpghome value in hiera.yaml is correct"
+              warn("No usable keys found in #{gnupghome}. Check :gpg_gnupghome value in hiera.yaml is correct")
+              raise ArgumentError, "No usable keys found in #{gnupghome}. Check :gpg_gnupghome value in hiera.yaml is correct"
             end
           end
 
